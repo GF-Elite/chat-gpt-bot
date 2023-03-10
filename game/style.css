@@ -1,0 +1,54 @@
+#game {
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.hole {
+	width: 100px;
+	height: 100px;
+	background-color: #333;
+	border-radius: 50%;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 60px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.hole.up {
+	top: 20px;
+}
+
+.hole.active {
+	background-color: #c0392b;
+}
+
+.mole {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-image: url("https://pngimg.com/uploads/mole/mole_PNG87.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	transform: translateY(100%);
+	transition: transform 0.2s ease-out;
+}
+
+.mole.up {
+	transform: translateY(0%);
+}
+
+.score {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 36px;
+	color: #fff;
+}
